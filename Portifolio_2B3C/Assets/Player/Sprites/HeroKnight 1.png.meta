@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ae297123f091bbf4e8f1835eb98fb293
+guid: 62fea97fdd3e786408e95a1e57d52e7c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -443,15 +443,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle0
+      name: ilde0
       rect:
         serializedVersion: 2
         x: 18
         y: 442
         width: 44
         height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -471,8 +471,8 @@ TextureImporter:
         y: 442
         width: 44
         height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -492,8 +492,8 @@ TextureImporter:
         y: 442
         width: 45
         height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -513,8 +513,8 @@ TextureImporter:
         y: 442
         width: 46
         height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -623,10 +623,10 @@ TextureImporter:
       HeroKnight_88: 21300176
       HeroKnight_89: 21300178
       HeroKnight_9: 21300018
-      idle0: 768615172
       idle1: 1485832994
       idle2: -993794782
       idle3: 21300006
+      ilde0: 768615172
       jump: 21300004
       walk0: 21300000
       walk1: 21300002
