@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    private RigidBody2D rb;
+    private RigidBody rb;
+    private SpriteRenderer spriteRenderer;
     [SerializeField]
     private float speed = 15f;
     private float horizontalAxis;
-    isOnFloor = false;
+    private bool isOnFloor = false;
     [SerializeField]
     private float jumpForce = 30f;
     void Awake(){
