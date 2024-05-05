@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    private RigidBody rb;
+
+    private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private float speed = 15f;
@@ -13,13 +14,13 @@ public class player : MonoBehaviour
     [SerializeField]
     private float jumpForce = 30f;
     void Awake(){
-        rb = GetComponent<RigidBody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
         horizontalAxis = Input.GetAxis("Horizontal");
         if (Input.GetKey(KeyCode.Space) && isOnFloor){
-            rb.addForce(Vector2.up * jumpForce);
+            rb.AddForce(Vector2.up * jumpForce);
         }
     }
     void FixedUpdate(){
