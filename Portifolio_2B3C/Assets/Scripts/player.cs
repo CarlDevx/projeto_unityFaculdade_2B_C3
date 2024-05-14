@@ -5,6 +5,7 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
 
+    public int coinsAmmount = 0;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -30,12 +31,15 @@ public class player : MonoBehaviour
         {
             case < 0:
                 spriteRenderer.flipX = true;
+                animator.SetBool("idle",false);
                 break;
             case > 0:
                 spriteRenderer.flipX = false;
+                animator.SetBool("idle",false);
                 break;
             default:
                 spriteRenderer.flipX = spriteRenderer.flipX;
+                animator.SetBool("idle",true);
                 break;
         }
     }
@@ -52,6 +56,8 @@ public class player : MonoBehaviour
         if (collision.gameObject.CompareTag("coin"))
         {
             Destroy(collision.gameObject);
+            coinsAmmount++;
+
         }
     }
     private void OnCollisionExit2D(Collision2D collision)

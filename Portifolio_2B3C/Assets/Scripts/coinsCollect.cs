@@ -1,14 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UI;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class coinsCollect : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player")) {
-            Destroy(this);
-        }
+    player player;
+    TextMeshProUGUI meshPro;
+    int coins = 0;
+    void Start(){
+        player = GameObject.Find("Player").GetComponent<player>();
+        meshPro = GetComponent<TextMeshProUGUI>();
+    }
+    void Update (){
+        coins = player.coinsAmmount;
+        meshPro.text = "score: " + coins.ToString();
     }
 }
